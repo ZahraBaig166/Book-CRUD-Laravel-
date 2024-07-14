@@ -45,4 +45,9 @@ Make sure you have the following installed: PHP (>= 7.3), Composer, MySQL, and L
 9. Access the application:  
    Open your web browser and go to `http://localhost:8000`.
   
-  
+
+  ## Screenshots 
+
+![Image 1](images/img1.png)
+![Image 2](images/img3.png)
+![Image 3](images/img4.png)
