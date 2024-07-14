@@ -4,7 +4,7 @@
 A simple book store management application built with Laravel. This app allows users to manage books, including adding, editing, and deleting book entries, with a user-friendly interface.
 
 ## Features
-- Add new books to the store
+- Add new books to the store with validation
 - display of all available books 
 - Edit existing book details
 - Delete books from the inventory
