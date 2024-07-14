@@ -17,8 +17,8 @@
             </ul>
         @endif
     </div>
-    {{-- {{ route('book.update', $book->id) }} --}}
-    <form method="post" action="">
+    
+    <form method="post" action="{{ route('book.update', ['book' => $book]) }}">
         @csrf
         @method('PUT') <!-- Change to PUT for updating -->
         <div>

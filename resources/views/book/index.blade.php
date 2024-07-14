@@ -8,7 +8,14 @@
 </head>
 <body>
     <h1>BOOKS</h1>
-    <DIV>
+    <div>
+        @if (session()->has('success'))
+        <div>
+            {{ session('success') }}
+        </div>
+            
+        @endif
+    </div>
         <div>
             <table border="1" cellpadding="10" cellspacing="0">
                
@@ -20,6 +27,7 @@
                         <th>No of Pages</th>
                         <th>Publication Date</th>
                         <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 
                 <tbody>
@@ -34,13 +42,18 @@
                         <td>
                             <a href="{{ route('book.edit', ['book' => $book]) }}">Edit</a>
                         </td>
+                        <td>
+                            <form action="post" action="{{route('book.delete', ['book' => $book])}}">
+                                @csrf
+                                @method('delete')
+                                <input type="submit" value="Delete"/>
+                            </form>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
-        
-    </DIV>
     
 </body>
 </html>
