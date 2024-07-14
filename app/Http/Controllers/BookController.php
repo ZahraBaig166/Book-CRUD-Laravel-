@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
 use  App\Models\Book;
+use Psy\Readline\Hoa\Console;
 
 class BookController extends Controller
 {
@@ -25,7 +26,7 @@ class BookController extends Controller
             'publication_date' => 'required|date',
         ]);
         $newbook= Book::create($data);
-         return redirect(route('book.index'));
+        return redirect(route('book.index'))->with('success','Book added successfully');
     }
     public function edit(Book $book){
         return view('book.edit',['book'=> $book]);

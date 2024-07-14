@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Book; // Use your Books model
+use App\Models\Book; 
 
 class BooksTableSeeder extends Seeder
 {
@@ -66,7 +66,7 @@ class BooksTableSeeder extends Seeder
         ];
 
         foreach ($books as $book) {
-            Book::create($book); // Use the Books model to create entries
+            Book::create($book); 
         }
     }
 }

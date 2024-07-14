@@ -14,12 +14,12 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
-            padding: 20px;
+            background-color: lightblue;
+            padding: 7px;
         }
         .container {
             background: #fff;
-            padding: 40px 20px;
+            padding: 0px 20px 5px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 100%;
@@ -28,7 +28,7 @@
             position: relative;
         }
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .back-button {
             position: absolute;
@@ -39,7 +39,7 @@
             font-weight: bold;
         }
         form div {
-            margin-bottom: 15px;
+            margin-bottom: 5px;
         }
         label {
             display: block;
@@ -65,12 +65,15 @@
         button:hover {
             background-color: #218838;
         }
+        button{
+            margin-top: 5px;
+        }
         .error-list {
             color: red;
             margin-bottom: 20px;
             position: absolute;
-            right: -200px;
-            top: 20px;
+            right: -300px;
+            top: 150px;
             width: 200px;
         }
     </style>
